@@ -3,7 +3,14 @@ import React from 'react'
 import { IoIosMail, IoMdLock } from 'react-icons/io'
 
 
-const FormModal = ({isOpen, onOpenChange, onOpen}) =>{
+interface FormModalProps {
+  isOpen: boolean;
+  onOpenChange: (open: boolean) => void;
+  onOpen: () => void;
+}
+
+
+const FormModal = ({isOpen, onOpenChange, onOpen}: FormModalProps) => {
   return (
     <Modal 
     isOpen={isOpen} 

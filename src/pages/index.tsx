@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
-  const [activeTab, setActiveTab] = useState('dashboard')
+  const [activeTab, setActiveTab] = useState<string>('dashboard')
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
 
@@ -27,7 +27,7 @@ export default function Home() {
       <div className=" w-1/6 border-r border-divider p-4 ">
       <div className="flex w-full flex-col">
       <Tabs aria-label="Options"  variant="light"  classNames={{tabList: 'flex flex-col w-full ', tabContent: 'w-full' , tab: 'py-3 h-10 ' }}   selectedKey={activeTab}
-        onSelectionChange={(e)=> setActiveTab(e)} >
+        onSelectionChange={(e)=> setActiveTab(e as string)} >
         <Tab
           key="dashboard"
           title={

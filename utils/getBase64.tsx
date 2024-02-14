@@ -52,12 +52,12 @@ export const generateMaskBase64 = (imageUrl: string): Promise<string> => {
                 top: 0,
                 left: 0,
                 fill: 'black',
-                width: imgInstance.width,
-                height: imgInstance.height,
+                width: imgInstance.width as number,
+                height: imgInstance.height as number,
                 clipPath: imgInstance,
             });
-            imgInstance.left = (-1 * imgInstance.width) / 2;
-            imgInstance.top = (-1 * imgInstance.height) / 2;
+            imgInstance.left = (-1 * (imgInstance.width as number)) / 2;
+            imgInstance.top = (-1 * (imgInstance.height as number)) / 2;
             canvas.add(mask);
             // Convert the canvas to a base64 image
             const base64Image = canvas.toDataURL({
