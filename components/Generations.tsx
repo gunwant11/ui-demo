@@ -61,7 +61,6 @@ const Generations = () => {
     }
 
   </div>
-
         </div>
     </>
   )
