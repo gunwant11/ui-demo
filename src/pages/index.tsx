@@ -7,7 +7,7 @@ import { RiBox3Fill } from "react-icons/ri";
 import { useState } from "react";
 import Dashboard from "../../components/Dashboard";
 import { FaPlus } from "react-icons/fa6";
-import Explore from "../../components/Explore";
+import Canvas from "../../components/Canvas";
 import Api from "../../components/Api";
 import Generations from "../../components/Generations";
 import FormModal from "../../components/FormModal";
@@ -46,11 +46,11 @@ export default function Home() {
             </div>
           }
         /> <Tab
-        key="explore"
+        key="Canvas"
         title={
           <div className="flex items-center text-base  space-x-2">
            <RiBox3Fill  />
-            <span>Explore</span>
+            <span>Canvas</span>
           </div>
         }
       />
@@ -73,7 +73,7 @@ export default function Home() {
         }  {
           activeTab == 'generations' && <Generations />
         }  {
-          activeTab == 'explore' && <Explore />
+          activeTab == 'Canvas' && <Canvas />
         }  {
           activeTab == 'api' && <Api />
         }

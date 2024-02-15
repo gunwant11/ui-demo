@@ -7,7 +7,7 @@ import { IoCloudyNight } from 'react-icons/io5'
 const Dashboard = () => {
     return (
         <div className='w-full'>
-            <div className="flex gap-6  " >
+            <div className="flex gap-5  " >
                 <div className="flex gap-2 items-center px-3 p-2 border border-divider text-gray-300 rounded-md min-w-64   ">
                     <span className="bg-cyan-500/30  p-2 rounded   text-cyan-500">
                         <IoCloudyNight />
@@ -22,7 +22,7 @@ const Dashboard = () => {
             </div>
             <div className="mt-6">
                 <h2 className="text-xl text-gray-400" >Recent projects</h2>
-                <div className=" flex mt-4 gap-6  ">
+                <div className=" flex mt-4 gap-5  ">
                     <div className="border border-divider rounded-md overflow-hidden w-64 ">
                         <Image
                             src="https://static.vecteezy.com/system/resources/previews/023/628/243/non_2x/ai-generative-a-man-is-beinggraphed-on-a-solid-background-with-a-look-of-confusion-on-his-face-free-photo.jpg"
